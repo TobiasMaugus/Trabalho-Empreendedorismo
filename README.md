@@ -63,7 +63,6 @@ A frequência das compras conjuntas e a intensidade da dificuldade ainda são **
 ## Documentação
 
 - [Entrega 1 — Descoberta do problema e da oportunidade](docs/entrega1/Entrega_1.md)
-- [Enunciado do trabalho (PDF)](Tp_Empreendedorismo_2026_2.pdf)
 
 ## Estrutura do repositório
 
