@@ -6,8 +6,8 @@
 ## 1. Identificação do grupo
 
 - **Nome provisório do empreendimento:** SmartSplit.
-- **Integrantes:** Felipe Crisóstomo Silva Oliviera; João Carlos de Castro Ferreira; João Gabriel Salomão Baldim; Tobias Maugus Bueno Cougo.
-- **Repositório:** https://github.com/TobiasMaugus//Trabalho-Empreendedorismo
+- **Integrantes:** Felipe Crisóstomo Silva Oliveira; João Carlos de Castro Ferreira; João Gabriel Salomão Baldim; Tobias Maugus Bueno Cougo.
+- **Repositório:** https://github.com/TobiasMaugus/Trabalho-Empreendedorismo
 
 ## 2. Problemas considerados
 
@@ -93,6 +93,73 @@ Quando moradores de uma mesma casa compram produtos de supermercado em uma únic
 
 **Registro:** codificar participantes como P01 a P08; anotar perfil, data, situação recente, método, frequência relatada, dificuldade observada, citações curtas autorizadas e hipóteses contrariadas. Evitar coletar CPF, chave de acesso integral, endereço, telefone, dados bancários ou imagens de notas sem necessidade. Não publicar gravações sem autorização.
 
-**Responsabilidades previstas:** recrutamento e agenda; condução das entrevistas; análise e síntese dos resultados; levantamento de concorrentes; registro das atividades e evidências no repositório. As funções podem ser acumuladas conforme a composição da equipe.
+**Responsabilidades previstas:** a divisão inicial de papéis entre os integrantes está apresentada na seção 12. Todos participarão da pesquisa e da revisão dos resultados.
 
 **Resultados a produzir:** roteiro final, registros anonimizados das 8 interações, síntese de padrões e divergências, comparação mais detalhada de alternativas, hipóteses mantidas/rejeitadas e decisão fundamentada de prosseguir ou pivotar.
+
+## 9. Justificativa da relevância do problema
+
+A divisão de compras com itens individuais e coletivos envolve mais decisões do que repartir o total da nota pelo número de moradores. É necessário distinguir produtos pessoais, produtos compartilhados por todos e produtos compartilhados apenas por parte do grupo. Quantidades e descontos podem tornar o cálculo mais trabalhoso, especialmente em compras com muitos itens.
+
+Uma divisão incorreta pode fazer um morador pagar por produtos que não lhe pertencem, exigir conferências e dificultar os reembolsos. A possibilidade de reduzir esse esforço e tornar os valores mais transparentes justifica investigar o problema. O contexto universitário de Lavras oferece acesso a potenciais participantes, permitindo estudar situações reais dentro do semestre.
+
+O potencial empreendedor está em oferecer uma experiência voltada às compras compartilhadas no Brasil, com uso dos dados da NFC-e e possibilidade de preço acessível. A intensidade da dificuldade, a adoção da solução e sua viabilidade comercial serão verificadas com o público-alvo.
+
+## 10. Três possíveis soluções tecnológicas
+
+### 10.1. Aplicativo móvel com leitura do QR Code da NFC-e
+
+O usuário lê o QR Code da nota, acessa a consulta digital e importa os produtos e valores por extração dos dados apresentados na página. Em seguida, atribui os itens a um ou mais moradores, define o pagador e obtém o resumo da divisão.
+
+**Vantagem potencial:** aproveitar os dados digitais sem depender da legibilidade de todo o texto impresso, desde que o QR Code ou o endereço de consulta esteja acessível. **Limitações:** conexão com a internet, disponibilidade da consulta, verificações humanas e diferenças entre páginas de estados distintos.
+
+### 10.2. Aplicativo com fotografia da nota e reconhecimento óptico de caracteres (OCR)
+
+O usuário fotografa a nota e o aplicativo reconhece nomes, quantidades e preços. Após a conferência e eventuais correções, os itens são atribuídos aos moradores para calcular as parcelas.
+
+**Vantagem potencial:** permitir leitura de recibos que não disponibilizem consulta digital compatível. **Limitações:** qualidade da imagem, impressão desgastada, enquadramento de notas longas e necessidade de corrigir erros de reconhecimento.
+
+### 10.3. Sistema web de lançamento manual e divisão colaborativa
+
+Um sistema acessível pelo navegador permite cadastrar a compra, inserir itens e valores e convidar os moradores para indicar suas participações. O sistema calcula as parcelas e mantém um registro compartilhado da divisão.
+
+**Vantagem potencial:** independência de portais fiscais e de reconhecimento de imagem, com acesso por diferentes dispositivos. **Limitações:** esforço de digitação, possibilidade de erros de entrada e necessidade de participação do grupo para conferir os dados.
+
+A solução com QR Code é a direção preliminar para o SmartSplit, pela possibilidade de reduzir a transcrição dos itens e aproveitar a infraestrutura de NFC-e brasileira. A escolha definitiva e o escopo do MVP serão orientados pelos resultados da validação.
+
+## 11. Critérios para escolha do problema
+
+- **Delimitação:** o problema corresponde a uma situação concreta, a divisão de uma compra de supermercado com produtos individuais e compartilhados.
+- **Acesso ao público-alvo:** a proximidade com estudantes da UFLA e moradores de Lavras facilita o recrutamento para entrevistas e observação.
+- **Possibilidade de validação:** é possível investigar compras recentes, métodos atuais, tempo de divisão, dúvidas e necessidade de correções.
+- **Potencial de recorrência:** o problema pode acompanhar a rotina de compras da residência; sua frequência será medida na pesquisa.
+- **Adequação ao semestre:** o fluxo central pode ser delimitado e testado sem exigir uma plataforma completa de gestão financeira.
+- **Software como componente central:** a recuperação dos itens, sua atribuição e o cálculo das parcelas dependem diretamente da solução tecnológica.
+- **Potencial de diferenciação:** a consulta à NFC-e e o foco em compras compartilhadas no Brasil permitem investigar uma proposta de valor específica.
+
+## 12. Divisão inicial de papéis entre os integrantes
+
+A distribuição proposta para o início do projeto estabelece responsáveis principais por cada frente, com participação dos demais integrantes nas entrevistas, na análise e na revisão das entregas.
+
+| Integrante                       | Papel inicial                       | Responsabilidades principais                                                                                                                         |
+| -------------------------------- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Felipe Crisóstomo Silva Oliviera | Pesquisa com usuários               | Organizar o recrutamento e a agenda, conduzir entrevistas e registrar situações reais de divisão de compras.                                         |
+| João Carlos de Castro Ferreira   | Pesquisa de mercado                 | Levantar concorrentes e alternativas, reunir fontes secundárias e comparar funcionalidades, custos e limitações.                                     |
+| João Gabriel Salomão Baldim      | Documentação e análise              | Consolidar registros anonimizados, identificar padrões e divergências e organizar a documentação e as evidências no repositório.                     |
+| Tobias Maugus Bueno Cougo        | Investigação técnica e prototipação | Avaliar as alternativas tecnológicas, investigar a recuperação de dados da NFC-e e planejar o fluxo de prototipação para testar a proposta de valor. |
+
+As responsabilidades serão ajustadas conforme os resultados da pesquisa e as necessidades das próximas etapas. A definição e a revisão do problema, da proposta de valor e do MVP serão realizadas pela equipe.
+
+## 13. Riscos percebidos no início do projeto
+
+| Risco                                                            | Possível impacto                                                                    | Abordagem inicial                                                                                                 |
+| ---------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| O problema ser pouco frequente ou pouco relevante                | Baixa motivação para adotar uma nova solução                                        | Investigar episódios recentes, frequência e satisfação com os métodos atuais.                                     |
+| Amostra concentrada em uma única residência ou círculo de amigos | Resultados pouco representativos do recorte escolhido                               | Recrutar moradores de casas diferentes e ouvir organizadores e participantes das compras.                         |
+| Dependência de portais de consulta da NFC-e                      | Falhas de importação por indisponibilidade, verificação humana ou mudança de layout | Avaliar notas de estabelecimentos distintos e delimitar inicialmente a consulta de Minas Gerais.                  |
+| Erros na interpretação de quantidades, preços e descontos        | Parcelas incorretas e perda de confiança                                            | Comparar dados importados com a nota e conferir se a soma das parcelas corresponde ao valor da compra.            |
+| Dificuldade para definir a participação em itens compartilhados  | A automação do cálculo não resolver o desacordo entre moradores                     | Investigar as regras usadas nas residências e permitir atribuições individuais e a subconjuntos de participantes. |
+| Concorrentes atenderem satisfatoriamente ao público              | Diferenciação insuficiente                                                          | Comparar esforço, precisão e custo com as alternativas efetivamente utilizadas pelos participantes.               |
+| Baixa disposição a pagar ou custo operacional elevado            | Inviabilidade de uma oferta de menor preço                                          | Separar a validação de utilidade da pesquisa de preço e estimar custos antes de definir cobrança.                 |
+| Exposição de dados pessoais nas notas e registros                | Comprometimento da privacidade dos participantes                                    | Usar registros anonimizados e ocultar dados pessoais nas evidências compartilhadas.                               |
+| Expansão excessiva do escopo e concentração de tarefas           | Atrasos e dificuldade de concluir a validação no semestre                           | Priorizar o fluxo principal, distribuir atividades e acompanhar responsáveis e prazos no repositório.             |
