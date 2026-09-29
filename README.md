@@ -69,7 +69,6 @@ A frequência das compras conjuntas e a intensidade da dificuldade ainda são **
 ```
 /
 ├── README.md
-├── Tp_Empreendedorismo_2026_2.pdf   # enunciado do trabalho
 └── docs/
     └── entrega1/                    # documentos da Entrega 1
 ```
