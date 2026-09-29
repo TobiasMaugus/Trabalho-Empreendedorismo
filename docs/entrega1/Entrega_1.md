@@ -7,7 +7,7 @@
 
 - **Nome provisório do empreendimento:** SmartSplit.
 - **Integrantes:** Felipe Crisóstomo Silva Oliviera; João Carlos de Castro Ferreira; João Gabriel Salomão Baldim; Tobias Maugus Bueno Cougo.
-- **Repositório:** https://github.com/TobiasMaugus/https://github.com/TobiasMaugus/Trabalho-Empreendedorismo
+- **Repositório:** https://github.com/TobiasMaugus//Trabalho-Empreendedorismo
 
 ## 2. Problemas considerados
 
