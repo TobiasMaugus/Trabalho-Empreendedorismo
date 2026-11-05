@@ -1,0 +1,91 @@
+export interface Profile {
+  id: string;
+  name: string;
+  color: string;
+  pixKey: string;
+  pixName: string;
+  pixCity: string;
+}
+
+export interface GroceryItem {
+  id: string;
+  name: string;
+  totalUnits: number;
+  unitPrice: number;
+  desconto?: number;
+}
+
+export type Allocations = Record<string, Record<string, number>>;
+
+export type Tab = "profiles" | "main" | "history";
+export type SubScreen = "none" | "processing" | "summary";
+
+export interface ProfileForm extends Profile {
+  showPix: boolean;
+}
+
+export interface HistoryEntry {
+  id: string;
+  date: string;
+  total: number;
+  payer: Profile;
+  desc: string;
+  marketName?: string;
+  dateCompra?: string;
+  horarioCompra?: string;
+  horario?: string;
+  // Lista completa de itens que pertencem a esta compra
+  items?: GroceryItem[];
+  // Desconto total aplicado à compra (valor absoluto)
+  desconto?: number;
+  // Mapeamento de alocação por item: allocs[itemId][profileId] = unidades
+  allocs?: Allocations;
+  participants?: Profile[];
+  paidStatus?: Record<string, boolean>;
+}
+
+// ─── Tipos para Gastos Genéricos & Pagamentos ───
+
+export type ExpenseType = 'NF' | 'GENERIC' | 'PAYMENT';
+
+export interface ExpenseParticipant {
+  profileId: string;
+  amountOwed: number;
+  isPaid: boolean;
+}
+
+export interface Expense {
+  id: string;
+  type: ExpenseType;
+  title: string;
+  description?: string;
+  date: string; // Formato ISO YYYY-MM-DD
+  totalAmount: number;
+  payerId: string;
+  receiverId?: string; // Exclusivo para type === 'PAYMENT'
+  participants: ExpenseParticipant[];
+}
+
+export const COLORS = [
+  "#6C63FF",
+  "#FF4757",
+  "#00C853",
+  "#FF9500",
+  "#00BCD4",
+  "#E91E63",
+  "#1976D2",
+  "#F4511E",
+  "#FFD166",
+  "#8E44AD",
+  "#10B981",
+  "#34495E",
+];
+
+export const COLLECTIVE = "__collective__";
+
+export const MIN_PROFILES = 1;
+export const MAX_PROFILES = 11;
+
+export function getCollectiveLabel(profileCount: number): string {
+  return profileCount === 2 ? "Ambos" : "Todos";
+}
