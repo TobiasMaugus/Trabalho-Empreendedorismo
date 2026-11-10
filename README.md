@@ -157,18 +157,31 @@ As datas abaixo são os marcos previstos no enunciado. A situação indica o mat
 | 1 | 29/09/2026 | Descoberta do problema e da oportunidade | Documentação disponível |
 | 2 | 13/10/2026 | Validação do problema, clientes e mercado | Documentação e registros exploratórios disponíveis |
 | 3 | 27/10/2026 | Proposta de valor, modelo de negócio e definição do MVP | Documentação, Canvas, jornada e wireframes disponíveis |
-| 4 | 10/11/2026 | MVP funcional e validação da solução | Código disponível; testes e consolidação dos resultados em andamento |
+| 4 | 10/11/2026 | MVP funcional e validação da solução | MVP, registros das sessões, gabaritos e relatório consolidado disponíveis |
 | 5 | 01/12/2026 | Entrega final e pitch | A preparar |
 
-### Próximos passos da Etapa 4
+### Resultados da Etapa 4
 
-- Disponibilizar instruções e versão reproduzível do aplicativo.
-- Testar o fluxo com pelo menos cinco organizadores representativos, conforme o protocolo; a meta é incluir também três receptores do resumo.
-- Registrar conclusão, tempo, erros, ajuda, comentários e percepção de valor.
-- Conferir importação e parcelas com gabaritos independentes.
-- Documentar problemas e modificações realizadas ou planejadas.
+Entre 04 e 07/11/2026, a equipe testou o fluxo com cinco organizadores (V01 a V05) e três receptores do resumo (V06 a V08), além de 12 tentativas de importação de NFC-e. Os números abaixo seguem a versão revisada dos registros de 10/11/2026.
 
-As metas definidas na Etapa 3, incluindo a redução mediana de tempo de 25%, são critérios de avaliação propostos. Os resultados reais serão registrados após as sessões, mesmo quando não atingirem essas metas.
+| Indicador | Resultado | Meta da Etapa 3 |
+| --- | --- | --- |
+| Conclusão do fluxo sem ajuda | 4/5 (80%) | Pelo menos 80% |
+| Redução mediana de tempo | 69,7% (estimativa, 4 pares) | Pelo menos 25% |
+| Parcelas iguais ao gabarito | 5/5 sessões | 100% |
+| Facilidade média (1 a 7) | 5,93 | Pelo menos 5,5 |
+| Clareza para receptores | 3/3 | Pelo menos 80% |
+| Notas importadas completas e corretas | 11/12 (91,7%) | Pelo menos 80% |
+| Linhas importadas corretamente | 247/259 (95,4%) | Pelo menos 90% |
+| Falhas silenciosas | Não aferido | Nenhuma |
+
+Os tempos no MVP são aproximações informadas pela equipe, não uma nova cronometragem. Antes de considerar o MVP aprovado, ainda é preciso:
+
+- definir uma regra única de arredondamento de centavos, já que a revisão do aplicativo encontrou parcelas que somam um centavo a menos que o total;
+- testar o tratamento de falhas;
+- realizar o acompanhamento de reutilização em 14 dias.
+
+Problemas, aprendizados e modificações estão no [relatório da Entrega 4](docs/entrega4/Entrega_4.md).
 
 ## Documentação
 
@@ -191,6 +204,14 @@ As metas definidas na Etapa 3, incluindo a redução mediana de tempo de 25%, s�
 - [Escopo do MVP e planejamento de desenvolvimento](docs/entrega3/Escopo_Planejamento_MVP.pdf)
 - [Equipe, Personal Business Model Canvas, jornada e wireframes](docs/entrega3/Equipe_Experiencia_Usuario.md)
 
+### Entrega 4
+
+- [MVP funcional e validação da solução](docs/entrega4/Entrega_4.md)
+- [Versão em PDF](docs/entrega4/Entrega_4.pdf)
+- [Registro das sessões (planilha)](docs/entrega4/Registro_Sessoes_SmartSplit.xlsx)
+- [Gabaritos e resultados dos testes](docs/entrega4/Gabarito%20teste.pdf)
+- [Capturas do aplicativo](docs/entrega4/capturas/)
+
 ### Aplicativo
 
 - [Código e arquivos do projeto](src/)
@@ -206,6 +227,7 @@ As metas definidas na Etapa 3, incluindo a redução mediana de tempo de 25%, s�
 | `docs/entrega1/` | Descoberta do problema e oportunidade |
 | `docs/entrega2/` | Pesquisa exploratória e análise de alternativas |
 | `docs/entrega3/` | Proposta de valor, modelo de negócio, equipe, UX e planejamento |
+| `docs/entrega4/` | Relatório do MVP e da validação, registros das sessões, gabaritos e capturas |
 | `src/` | Raiz do projeto Expo, com `package.json` e configurações |
 | `src/src/app/` | Rotas e telas do aplicativo |
 | `src/src/components/` | Componentes de interface |
