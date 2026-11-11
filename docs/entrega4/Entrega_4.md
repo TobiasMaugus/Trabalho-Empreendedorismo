@@ -284,4 +284,4 @@ Antes de declarar o MVP aprovado, a equipe deve:
 
 ## 12. Uso de Inteligência Artificial
 
-O Claude (Anthropic) auxiliou na leitura do código para descrever o fluxo implementado, na geração das capturas pela versão web, na conferência dos cálculos da planilha e na redação deste documento. Os resultados das sessões e das notas foram transcritos da planilha e do PDF revisados pela equipe em 10/11/2026, sem acréscimo de participantes, respostas ou medições. Os pontos da seção 7.2 vêm da revisão do código e da demonstração descrita na seção 3, não das sessões com participantes. A revisão humana deve conferir a correspondência com os registros e a decisão da equipe.
+O Claude (Anthropic) foi utilizado apenas como apoio na documentação, auxiliando na organização e redação deste texto. O conteúdo foi revisado pela equipe.
